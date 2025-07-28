@@ -9,9 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>ValentinaDale</groupId>
-	<artifactId>ProyectoModulo</artifactId>
+	<artifactId>ProyectoModuloPOO</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>ProyectoModulo</name>
+	<packaging>war</packaging>
+	<name>ProyectoModuloPOO</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
@@ -47,10 +48,21 @@
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
 
+		<!--Dependencia para cargar el archivo .env-->
+		<dependency>
+			<groupId>io.github.cdimascio</groupId>
+			<artifactId>dotenv-java</artifactId>
+			<version>3.0.0</version>
+		</dependency>
 
 	</dependencies>
 
